@@ -16,6 +16,7 @@
 
     img {
         height: 250px;
+        min-height: 250px;
         border-radius: 4px 4px 0 0;
         object-fit: cover;
         object-position: center;
@@ -79,7 +80,6 @@
 
         img {
             height: 250px;
-            min-height: 250px;
             border-radius: 4px 4px 0 0;
             object-fit: cover;
             object-position: center;
