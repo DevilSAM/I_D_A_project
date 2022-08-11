@@ -14,7 +14,7 @@
         margin-right: 15px;
     }
 
-    img {
+    .product-picture {
         height: 250px;
         min-height: 250px;
         border-radius: 4px 4px 0 0;
@@ -78,7 +78,7 @@
         margin-bottom: 1rem;
 
 
-        img {
+        .product-picture {
             height: 250px;
             border-radius: 4px 4px 0 0;
             object-fit: cover;
@@ -117,8 +117,9 @@
 
 @media (max-width: 576px) {
     .product-item {
-        img {
+        .product-picture {
             height: 200px;
+            min-height: 200px;
         }
         .product-data {
             .product-title {
