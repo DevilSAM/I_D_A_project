@@ -1,0 +1,51 @@
+.list-move {
+    transition: all 0.5s ease;
+}
+
+// добавление элемента
+.list-enter-active {
+    animation: top_down 0.5s;
+}
+.list-enter-from {
+    transform: translateY(-25px);
+    opacity: 0;
+}
+.list-enter-to {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+// удаление элемента
+.list-leave-active {
+    animation: scale_animation 0.5s reverse;
+}
+.list-leave-from {
+    transform: scale(0);
+    opacity: 0;
+}
+.list-leave-to {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+@keyframes scale_animation {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes top_down {
+    0% {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

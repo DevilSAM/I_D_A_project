@@ -1,0 +1,19 @@
+// Body
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #3F3F3F;
+    background-color: #E5E5E5;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#app {
+    padding: 2rem;
+}
+
+@media (max-width: 576px) {
+    #app {
+        padding: 1rem;
+    }
+}
