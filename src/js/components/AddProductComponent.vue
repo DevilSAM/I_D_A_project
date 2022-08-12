@@ -72,6 +72,13 @@ export default {
         }
     },
 
+    mounted() {
+        // обработчик будет уберать класс анимации удачного добавления объекта с формы
+        document.getElementById('addProductForm').addEventListener("webkitAnimationEnd", function(){
+            this.classList.remove('successfully-added')
+        });
+    },
+
     computed: {
         disabled() {
             return !(this.form.title && this.form.img && this.form.price)
@@ -90,10 +97,6 @@ export default {
             this.resetForm()
             // визуализация удачного добавления
             document.getElementById('addProductForm').classList.add('successfully-added')
-            // после окончания анимации (длится 3с) удаляем этот класс
-            setTimeout(function (){
-                document.getElementById('addProductForm').classList.remove('successfully-added')
-            }, 3000)
         },
 
         // проверка правильности заполнения формы

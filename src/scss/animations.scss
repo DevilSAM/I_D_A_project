@@ -49,3 +49,18 @@
         transform: translateY(0);
     }
 }
+
+
+// удачное добавление объекта
+.successfully-added {
+    animation: form_success 3s;
+}
+
+@keyframes form_success {
+    20% {
+        box-shadow: 0 0 10pt 5pt #7bae73;
+    }
+    0%,  100% {
+        box-shadow: 0 0 0 0 #7bae73;
+    }
+}
