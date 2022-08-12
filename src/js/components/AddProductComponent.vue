@@ -73,7 +73,7 @@ export default {
     },
 
     mounted() {
-        // обработчик будет уберать класс анимации удачного добавления объекта с формы
+        // обработчик будет убирать класс анимации удачного добавления объекта с формы
         document.getElementById('addProductForm').addEventListener("webkitAnimationEnd", function(){
             this.classList.remove('successfully-added')
         });
@@ -95,6 +95,7 @@ export default {
 
             this.$emit('addProductItem', this.form)
             this.resetForm()
+
             // визуализация удачного добавления
             document.getElementById('addProductForm').classList.add('successfully-added')
         },
