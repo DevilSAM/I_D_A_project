@@ -62,8 +62,8 @@ export default {
             }
             else if (this.sorting === 'title'){
                 return this.products.sort((a,b)=>{
-                    if(a.title > b.title) {return 1}
-                    if(a.title < b.title) {return -1}
+                    if(a.title.toLocaleLowerCase() > b.title.toLocaleLowerCase()) {return 1}
+                    if(a.title.toLocaleLowerCase() < b.title.toLocaleLowerCase()) {return -1}
                     return 0
                 })
             }

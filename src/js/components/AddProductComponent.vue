@@ -88,6 +88,12 @@ export default {
 
             this.$emit('addProductItem', this.form)
             this.resetForm()
+            // визуализация удачного добавления
+            document.getElementById('addProductForm').classList.add('successfully-added')
+            // после окончания анимации (длится 3с) удаляем этот класс
+            setTimeout(function (){
+                document.getElementById('addProductForm').classList.remove('successfully-added')
+            }, 3000)
         },
 
         // проверка правильности заполнения формы
