@@ -4,7 +4,7 @@
 
     <TransitionGroup name="list" tag="div" class="product-list" v-else>
         <div class="product-item" v-for="(product, index) in sorted" :key="product.title">
-            <img :src="product.img" alt="product_img">
+            <img :src="product.img" alt="product_img" class="product-picture">
             <div class="product-data">
                 <div class="top">
                     <h2 class="product-title">{{ product.title }}</h2>
