@@ -122,7 +122,7 @@ export default {
             let key = e.keyCode;
             key = String.fromCharCode( key );
             let regex = /[0-9]/;
-            if( !regex.test(key) || (key==0 && this.form.price.length === 0) ) {
+            if( !regex.test(key) || (key==="0" && this.form.price.length === 0) ) {
                 e.returnValue = false;
                 if(e.preventDefault) {
                     e.preventDefault();
